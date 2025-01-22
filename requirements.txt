@@ -1,0 +1,18 @@
+dependency-injector
+sqlalchemy
+mysqlclient
+alembic
+python == 3.10
+"passlib[bcrypt]"
+py-ulid
+fastapi
+uvicorn
+"pydantic[email]"
+"python-jose[cryptography]"
+python-multipart
+python-dotenv
+pydantic-settings
+celery
+eventlet
+requests
+ccxt
