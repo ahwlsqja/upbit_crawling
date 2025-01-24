@@ -1,9 +1,11 @@
 import uvicorn
 from fastapi import FastAPI
-# from middlewares import create_middlewares
+from containers import Container
+from upbits.interface.controllers.upbit_controllers import router as upbitprice_routers
 
 app = FastAPI()
-
+app.container = Container()
+app.include_router(upbitprice_routers)
 
 @app.get("/")
 def hello():
